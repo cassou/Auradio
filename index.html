@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auradio — annuaire de webradios</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7f7f9;
+    --card-bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #666;
+    --accent: #e63946;
+    --border: #e5e5e8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --card-bg: #1c1c1f;
+      --text: #f0f0f0;
+      --muted: #a0a0a5;
+      --border: #2c2c30;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    padding: 2.5rem 1.5rem 1.5rem;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 0.25rem; font-size: 1.8rem; }
+  header p { margin: 0; color: var(--muted); }
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .card-header img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .card-header h2 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+  .card p.desc {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+    flex-grow: 1;
+  }
+  audio {
+    width: 100%;
+    height: 34px;
+  }
+  .card-links {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.8rem;
+  }
+  .card-links a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .card-links a:hover { text-decoration: underline; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    padding-bottom: 2rem;
+  }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📻 Auradio</h1>
+  <p>Un annuaire de webradios françaises, ouvert et statique.</p>
+</header>
+<main id="radios"></main>
+<footer>
+  Liste source : <a href="list.json">list.json</a> — flux individuels dans <a href="play/">play/</a>
+</footer>
+<script>
+async function main() {
+  const container = document.getElementById('radios');
+  let radios;
+  try {
+    const res = await fetch('list.json');
+    radios = await res.json();
+  } catch (e) {
+    container.textContent = "Impossible de charger list.json";
+    return;
+  }
+
+  for (const radio of radios) {
+    const card = document.createElement('div');
+    card.className = 'card';
+
+    const headerRow = document.createElement('div');
+    headerRow.className = 'card-header';
+
+    if (radio.icon) {
+      const img = document.createElement('img');
+      img.src = radio.icon;
+      img.alt = radio.name;
+      headerRow.appendChild(img);
+    }
+
+    const h2 = document.createElement('h2');
+    h2.textContent = radio.name;
+    headerRow.appendChild(h2);
+    card.appendChild(headerRow);
+
+    const desc = document.createElement('p');
+    desc.className = 'desc';
+    desc.textContent = radio.description || '';
+    card.appendChild(desc);
+
+    const audio = document.createElement('audio');
+    audio.controls = true;
+    audio.preload = 'none';
+    audio.src = radio.url;
+    card.appendChild(audio);
+
+    const links = document.createElement('div');
+    links.className = 'card-links';
+    const playLink = document.createElement('a');
+    playLink.href = `play/${radio.id}`;
+    playLink.textContent = 'play/' + radio.id;
+    links.appendChild(playLink);
+    card.appendChild(links);
+
+    container.appendChild(card);
+  }
+}
+main();
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "ouifm",
+    "name": "OÜI FM",
+    "description": "La radio rock indépendante, du classic rock aux découvertes actuelles.",
+    "icon": "img/ouifm.svg",
+    "url": "https://ouifm.ice.infomaniak.ch/ouifm-high.mp3"
+  },
+  {
+    "id": "france-inter",
+    "name": "France Inter",
+    "description": "La radio généraliste de service public : infos, culture, humour et musique.",
+    "icon": "img/france-inter.svg",
+    "url": "https://icecast.radiofrance.fr/franceinter-midfi.mp3"
+  },
+  {
+    "id": "france-info",
+    "name": "franceinfo",
+    "description": "L'information en continu par Radio France.",
+    "icon": "img/france-info.svg",
+    "url": "https://icecast.radiofrance.fr/franceinfo-midfi.mp3"
+  },
+  {
+    "id": "france-culture",
+    "name": "France Culture",
+    "description": "Savoirs, débats d'idées, littérature et fictions radiophoniques.",
+    "icon": "img/france-culture.svg",
+    "url": "https://icecast.radiofrance.fr/franceculture-midfi.mp3"
+  },
+  {
+    "id": "france-musique",
+    "name": "France Musique",
+    "description": "Musique classique, jazz et musiques du monde.",
+    "icon": "img/france-musique.svg",
+    "url": "https://icecast.radiofrance.fr/francemusique-midfi.mp3"
+  },
+  {
+    "id": "fip",
+    "name": "FIP",
+    "description": "Une programmation musicale éclectique, sans publicité ni animation.",
+    "icon": "img/fip.svg",
+    "url": "https://icecast.radiofrance.fr/fip-midfi.mp3"
+  },
+  {
+    "id": "nrj",
+    "name": "NRJ",
+    "description": "Les plus grands hits et les nouveautés pop / dance.",
+    "icon": "img/nrj.svg",
+    "url": "https://cdn.nrjaudio.fm/audio1/fr/30001/mp3_128.mp3"
+  },
+  {
+    "id": "nostalgie",
+    "name": "Nostalgie",
+    "description": "Les tubes qui ont marqué les années 60 à 2000.",
+    "icon": "img/nostalgie.svg",
+    "url": "https://streaming.nrjaudio.fm/oug7girb92oc?origine=fluxradios"
+  },
+  {
+    "id": "cherie-fm",
+    "name": "Chérie FM",
+    "description": "Les plus belles chansons d'amour et de bonne humeur.",
+    "icon": "img/cherie-fm.svg",
+    "url": "https://streaming.nrjaudio.fm/ouuku85n3nje?origine=fluxradios"
+  },
+  {
+    "id": "rire-et-chansons",
+    "name": "Rire et Chansons",
+    "description": "De l'humour et des sketches entre deux chansons.",
+    "icon": "img/rire-et-chansons.svg",
+    "url": "https://streaming.nrjaudio.fm/ou8o8xgk7oiu?origine=fluxurlradio"
+  },
+  {
+    "id": "skyrock",
+    "name": "Skyrock",
+    "description": "Rap, R&B et talk-shows, la radio de la culture urbaine.",
+    "icon": "img/skyrock.svg",
+    "url": "https://icecast.skyrock.net/s/natio_mp3_128k"
+  },
+  {
+    "id": "virgin-radio",
+    "name": "Virgin Radio",
+    "description": "Pop rock et hits internationaux.",
+    "icon": "img/virgin-radio.svg",
+    "url": "https://virginradio.ice.infomaniak.ch/virgin-radio.mp3"
+  }
+]
