@@ -35,6 +35,13 @@ make clean  # supprime le dossier play/
 
 Nécessite [`jq`](https://jqlang.org/).
 
+## Serveur local
+
+```sh
+make serve            # sert le site sur le port 8000, accessible depuis le réseau local
+make serve PORT=8080  # port custom
+```
+
 ## Déploiement
 
 Le workflow `.github/workflows/deploy.yml` régénère `play/` via `make` puis
@@ -42,14 +49,6 @@ publie l'ensemble du dossier sur GitHub Pages à chaque push sur `main`.
 
 Pour l'activer : dans les paramètres du dépôt GitHub, section **Pages**,
 choisir la source **GitHub Actions**.
-
-## Prévisualiser en local
-
-```sh
-make
-python3 -m http.server 8000
-# puis ouvrir http://localhost:8000
-```
 
 (`fetch('list.json')` nécessite un serveur HTTP — ouvrir `index.html`
 directement via `file://` ne fonctionnera pas à cause des restrictions CORS
