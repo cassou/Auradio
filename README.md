@@ -2,6 +2,9 @@
 
 Annuaire statique de webradios, hébergé sur GitHub Pages.
 
+> ⚠️ **Ce projet est 100% vibecodé** : généré par un agent IA, non relu ni
+> vérifié par un humain. Vérifiez le code et les flux avant tout usage sérieux.
+
 ## Structure
 
 - `list.json` — la source de vérité : un tableau JSON de radios, chacune avec :
