@@ -36,6 +36,28 @@
   }
   header h1 { margin: 0 0 0.25rem; font-size: 1.8rem; }
   header p { margin: 0; color: var(--muted); }
+  .filters {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .filters button {
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text);
+    border-radius: 999px;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  .filters button.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
   main {
     max-width: 900px;
     margin: 0 auto;
@@ -44,6 +66,7 @@
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 1rem;
   }
+  .card.hidden { display: none; }
   .card {
     background: var(--card-bg);
     border: 1px solid var(--border);
@@ -102,6 +125,7 @@
   <h1>📻 Auradio</h1>
   <p>Un annuaire de webradios françaises, ouvert et statique.</p>
 </header>
+<div class="filters" id="filters"></div>
 <main id="radios"></main>
 <footer>
   Liste source : <a href="list.json">list.json</a> — flux individuels dans <a href="play/">play/</a>
@@ -118,9 +142,33 @@ async function main() {
     return;
   }
 
+  const themes = [...new Set(radios.map(r => r.theme).filter(Boolean))].sort();
+  const filtersEl = document.getElementById('filters');
+  const setActive = (theme) => {
+    for (const btn of filtersEl.children) {
+      btn.classList.toggle('active', btn.dataset.theme === theme);
+    }
+    for (const card of container.children) {
+      card.classList.toggle('hidden', theme !== 'all' && card.dataset.theme !== theme);
+    }
+  };
+  const allBtn = document.createElement('button');
+  allBtn.textContent = 'Tous';
+  allBtn.dataset.theme = 'all';
+  allBtn.onclick = () => setActive('all');
+  filtersEl.appendChild(allBtn);
+  for (const theme of themes) {
+    const btn = document.createElement('button');
+    btn.textContent = theme;
+    btn.dataset.theme = theme;
+    btn.onclick = () => setActive(theme);
+    filtersEl.appendChild(btn);
+  }
+
   for (const radio of radios) {
     const card = document.createElement('div');
     card.className = 'card';
+    card.dataset.theme = radio.theme || '';
 
     const headerRow = document.createElement('div');
     headerRow.className = 'card-header';
@@ -158,6 +206,7 @@ async function main() {
 
     container.appendChild(card);
   }
+  setActive('all');
 }
 main();
 </script>

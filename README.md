@@ -12,7 +12,9 @@ Annuaire statique de webradios, servi localement ou depuis une Raspberry Pi.
   - `name` — nom affiché
   - `description` — courte description
   - `icon` — chemin optionnel vers une icône dans `img/`
-  - `url` — url du flux audio, **au format mp3**
+  - `theme` — catégorie pour le filtrage (`generaliste`, `info`, `culture`, `classique`,
+    `eclectique`, `musique`, `urbain`, `humour`, `monde`, `enfants`, `detente`, `cinema`)
+  - `url` — url du flux audio, **en http (pas de https) et au format mp3**
 - `img/` — icônes des radios (SVG)
 - `play/` — un fichier par radio, généré automatiquement à partir de `list.json`.
   Chaque fichier s'appelle `play/<id>` (sans extension) et contient un tableau
