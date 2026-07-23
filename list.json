@@ -100,230 +100,263 @@
     "name": "RTL",
     "description": "La grande radio généraliste : info, talk-shows, humour et divertissement.",
     "theme": "generaliste",
-    "url": "http://icecast.rtl.fr/rtl-1-44-128"
+    "url": "http://icecast.rtl.fr/rtl-1-44-128",
+    "icon": "img/rtl.svg"
   },
   {
     "id": "france-bleu-paris",
     "name": "France Bleu Paris",
     "description": "L'actualité de proximité et les musiques populaires en Île-de-France.",
     "theme": "generaliste",
-    "url": "http://icecast.radiofrance.fr/fb1071-midfi.mp3"
+    "url": "http://icecast.radiofrance.fr/fb1071-midfi.mp3",
+    "icon": "img/france-bleu-paris.svg"
   },
   {
     "id": "rtl2",
     "name": "RTL2",
     "description": "Pop-rock non-stop, d'hier et d'aujourd'hui.",
     "theme": "musique",
-    "url": "http://icecast.rtl2.fr/rtl2-1-44-128"
+    "url": "http://icecast.rtl2.fr/rtl2-1-44-128",
+    "icon": "img/rtl2.svg"
   },
   {
     "id": "fun-radio",
     "name": "Fun Radio",
     "description": "Dance, électro et les hits qui font bouger.",
     "theme": "musique",
-    "url": "http://icecast.funradio.fr/fun-1-44-128"
+    "url": "http://icecast.funradio.fr/fun-1-44-128",
+    "icon": "img/fun-radio.svg"
   },
   {
     "id": "mouv",
     "name": "Mouv'",
     "description": "Rap, hip-hop et culture urbaine, par Radio France.",
     "theme": "urbain",
-    "url": "http://icecast.radiofrance.fr/mouv-midfi.mp3"
+    "url": "http://icecast.radiofrance.fr/mouv-midfi.mp3",
+    "icon": "img/mouv.svg"
   },
   {
     "id": "generations",
     "name": "Générations",
     "description": "Hip-hop, R&B et soul, la radio de la culture urbaine.",
     "theme": "urbain",
-    "url": "http://generationfm.ice.infomaniak.ch/generationfm-high.mp3"
+    "url": "http://generationfm.ice.infomaniak.ch/generationfm-high.mp3",
+    "icon": "img/generations.svg"
   },
   {
     "id": "beur-fm",
     "name": "Beur FM",
     "description": "Musiques et cultures du Maghreb, en français et en arabe.",
     "theme": "monde",
-    "url": "http://beurfm.ice.infomaniak.ch/beurfm-high.mp3"
+    "url": "http://beurfm.ice.infomaniak.ch/beurfm-high.mp3",
+    "icon": "img/beur-fm.svg"
   },
   {
     "id": "rfi-monde",
     "name": "RFI Monde",
     "description": "L'actualité internationale vue de France, en continu.",
     "theme": "monde",
-    "url": "http://live02.rfi.fr/rfimonde-64.mp3"
+    "url": "http://live02.rfi.fr/rfimonde-64.mp3",
+    "icon": "img/rfi-monde.svg"
   },
   {
     "id": "latina",
     "name": "Latina",
     "description": "Musiques latino et populaires, non-stop.",
     "theme": "musique",
-    "url": "http://start-latina.ice.infomaniak.ch/start-latina-high.mp3"
+    "url": "http://start-latina.ice.infomaniak.ch/start-latina-high.mp3",
+    "icon": "img/latina.svg"
   },
   {
     "id": "m-radio",
     "name": "M Radio",
     "description": "Une radio musicale grand public, généraliste et conviviale.",
     "theme": "musique",
-    "url": "http://mfm.ice.infomaniak.ch/mfm-128.mp3"
+    "url": "http://mfm.ice.infomaniak.ch/mfm-128.mp3",
+    "icon": "img/m-radio.svg"
   },
   {
     "id": "alouette",
     "name": "Alouette",
     "description": "Une radio de proximité, musique et bonne humeur.",
     "theme": "musique",
-    "url": "http://alouette.ice.infomaniak.ch/alouette-high.mp3"
+    "url": "http://alouette.ice.infomaniak.ch/alouette-high.mp3",
+    "icon": "img/alouette.svg"
   },
   {
     "id": "tsf-jazz",
     "name": "TSF Jazz",
     "description": "Tout le jazz, du classique au contemporain.",
     "theme": "musique",
-    "url": "http://tsfjazz.ice.infomaniak.ch/tsfjazz-high.mp3"
+    "url": "http://tsfjazz.ice.infomaniak.ch/tsfjazz-high.mp3",
+    "icon": "img/tsf-jazz.svg"
   },
   {
     "id": "radio-nova",
     "name": "Radio Nova",
     "description": "Une programmation musicale libre et éclectique.",
     "theme": "eclectique",
-    "url": "http://novazz.ice.infomaniak.ch/novazz-128.mp3"
+    "url": "http://novazz.ice.infomaniak.ch/novazz-128.mp3",
+    "icon": "img/radio-nova.svg"
   },
   {
     "id": "radio-meuh",
     "name": "Radio Meuh",
     "description": "Funk, groove et musiques électroniques indépendantes.",
     "theme": "musique",
-    "url": "http://radiomeuh.ice.infomaniak.ch/radiomeuh-128.mp3"
+    "url": "http://radiomeuh.ice.infomaniak.ch/radiomeuh-128.mp3",
+    "icon": "img/radio-meuh.svg"
   },
   {
     "id": "allzic-comptines",
     "name": "Allzic Radio Comptines",
     "description": "Comptines et chansons pour les tout-petits.",
     "theme": "enfants",
-    "url": "http://allzic05.ice.infomaniak.ch/allzic05.mp3"
+    "url": "http://allzic05.ice.infomaniak.ch/allzic05.mp3",
+    "icon": "img/allzic-comptines.svg"
   },
   {
     "id": "allzic-0-4-ans",
     "name": "Allzic Radio 0-4 ans",
     "description": "Musique et chansons adaptées aux tout-petits, de 0 à 4 ans.",
     "theme": "enfants",
-    "url": "http://allzic14.ice.infomaniak.ch/allzic14.mp3"
+    "url": "http://allzic14.ice.infomaniak.ch/allzic14.mp3",
+    "icon": "img/allzic-0-4-ans.svg"
   },
   {
     "id": "allzic-4-7-ans",
     "name": "Allzic Radio 4-7 ans",
     "description": "Une programmation pensée pour les 4-7 ans.",
     "theme": "enfants",
-    "url": "http://allzic15.ice.infomaniak.ch/allzic15.mp3"
+    "url": "http://allzic15.ice.infomaniak.ch/allzic15.mp3",
+    "icon": "img/allzic-4-7-ans.svg"
   },
   {
     "id": "allzic-7-12-ans",
     "name": "Allzic Radio 7-12 ans",
     "description": "Musique actuelle adaptée aux 7-12 ans.",
     "theme": "enfants",
-    "url": "http://allzic16.ice.infomaniak.ch/allzic16.mp3"
+    "url": "http://allzic16.ice.infomaniak.ch/allzic16.mp3",
+    "icon": "img/allzic-7-12-ans.svg"
   },
   {
     "id": "allzic-disney",
     "name": "Allzic Radio Disney",
     "description": "Les musiques et bandes originales des films Disney.",
     "theme": "enfants",
-    "url": "http://allzic52.ice.infomaniak.ch/allzic52.mp3"
+    "url": "http://allzic52.ice.infomaniak.ch/allzic52.mp3",
+    "icon": "img/allzic-disney.svg"
   },
   {
     "id": "essentiel-kidz",
     "name": "Essentiel Kidz",
     "description": "Une radio 100% dédiée aux enfants.",
     "theme": "enfants",
-    "url": "http://essentielradioing.streamakaci.com/essentielkidz.mp3"
+    "url": "http://essentielradioing.streamakaci.com/essentielkidz.mp3",
+    "icon": "img/essentiel-kidz.svg"
   },
   {
     "id": "allzic-lounge",
     "name": "Allzic Radio Lounge",
     "description": "Lounge et downtempo pour se détendre.",
     "theme": "detente",
-    "url": "http://allzic21.ice.infomaniak.ch/allzic21.mp3"
+    "url": "http://allzic21.ice.infomaniak.ch/allzic21.mp3",
+    "icon": "img/allzic-lounge.svg"
   },
   {
     "id": "jazz-radio-lounge",
     "name": "Jazz Radio Lounge",
     "description": "Jazz feutré et ambiances lounge.",
     "theme": "detente",
-    "url": "http://jazzlounge.ice.infomaniak.ch/jazzlounge-high.mp3"
+    "url": "http://jazzlounge.ice.infomaniak.ch/jazzlounge-high.mp3",
+    "icon": "img/jazz-radio-lounge.svg"
   },
   {
     "id": "crooner-radio-lounge",
     "name": "Crooner Radio Lounge",
     "description": "Voix de crooners et ambiance lounge intemporelle.",
     "theme": "detente",
-    "url": "http://croonerradio_lounge.ice.infomaniak.ch/croonerradio-lounge-midfi.mp3"
+    "url": "http://croonerradio_lounge.ice.infomaniak.ch/croonerradio-lounge-midfi.mp3",
+    "icon": "img/crooner-radio-lounge.svg"
   },
   {
     "id": "radio-nova-nuit",
     "name": "Radio Nova La Nuit",
     "description": "L'ambiance feutrée de Nova, la nuit.",
     "theme": "detente",
-    "url": "http://nova-ln.ice.infomaniak.ch/nova-ln-128.mp3"
+    "url": "http://nova-ln.ice.infomaniak.ch/nova-ln-128.mp3",
+    "icon": "img/radio-nova-nuit.svg"
   },
   {
     "id": "fip-groove",
     "name": "FIP autour du groove",
     "description": "Le groove doux et feutré signé FIP.",
     "theme": "detente",
-    "url": "http://icecast.radiofrance.fr/fipgroove-midfi.mp3"
+    "url": "http://icecast.radiofrance.fr/fipgroove-midfi.mp3",
+    "icon": "img/fip-groove.svg"
   },
   {
     "id": "yoga-chill",
     "name": "Yoga Chill",
     "description": "Musique douce pour le yoga, la méditation et la détente.",
     "theme": "detente",
-    "url": "http://178.32.111.41:8027/stream-128kmp3-YogaChill"
+    "url": "http://178.32.111.41:8027/stream-128kmp3-YogaChill",
+    "icon": "img/yoga-chill.svg"
   },
   {
     "id": "jazz-radio-cinema",
     "name": "Jazz Radio Jazz & Cinéma",
     "description": "Musiques de films et bandes originales, entre jazz et cinéma.",
     "theme": "cinema",
-    "url": "http://jzr-wr20.ice.infomaniak.ch/jzr-wr20.mp3"
+    "url": "http://jzr-wr20.ice.infomaniak.ch/jzr-wr20.mp3",
+    "icon": "img/jazz-radio-cinema.svg"
   },
   {
     "id": "moviesoundtracks-1fm",
     "name": "1.FM Movie Soundtracks",
     "description": "Les plus grandes bandes originales de films.",
     "theme": "cinema",
-    "url": "http://strm112.1.fm/moviesoundtracks_mobile_mp3"
+    "url": "http://strm112.1.fm/moviesoundtracks_mobile_mp3",
+    "icon": "img/moviesoundtracks-1fm.svg"
   },
   {
     "id": "soundtrack-radio",
     "name": "Soundtrack Radio Station",
     "description": "Musiques de films et compositions instrumentales pour le cinéma.",
     "theme": "cinema",
-    "url": "http://quincy.torontocast.com:2410/stream"
+    "url": "http://quincy.torontocast.com:2410/stream",
+    "icon": "img/soundtrack-radio.svg"
   },
   {
     "id": "klassikradio-dreams",
     "name": "Klassik Radio Dreams",
     "description": "Musique classique et bandes originales de films, en continu.",
     "theme": "cinema",
-    "url": "http://stream.klassikradio.de/dreams/mp3-128/"
+    "url": "http://stream.klassikradio.de/dreams/mp3-128/",
+    "icon": "img/klassikradio-dreams.svg"
   },
   {
     "id": "bond-radio-007",
     "name": "007 Radio",
     "description": "Toutes les musiques de la saga James Bond.",
     "theme": "cinema",
-    "url": "http://stream.laut.fm/007"
+    "url": "http://stream.laut.fm/007",
+    "icon": "img/bond-radio-007.svg"
   },
   {
     "id": "epicsoundsfm",
     "name": "Epic Sounds FM",
     "description": "Musique épique et cinématique, entre bandes-annonces et bandes originales.",
     "theme": "cinema",
-    "url": "http://stream.laut.fm/epicsoundsfm"
+    "url": "http://stream.laut.fm/epicsoundsfm",
+    "icon": "img/epicsoundsfm.svg"
   },
   {
     "id": "radio-eden-fm",
     "name": "Radio Eden FM",
     "description": "Une ambiance douce et planante, pour se détendre.",
     "theme": "detente",
-    "url": "http://s1.slotex.pl:7402/"
+    "url": "http://s1.slotex.pl:7402/",
+    "icon": "img/radio-eden-fm.svg"
   }
 ]
